@@ -1,0 +1,64 @@
+site_name: KrispyDocs
+site_author: DerKrisp
+
+repo_url: https://github.com/DerKrisp/KrispyDocs
+repo_name: DerKrisp/KrispyDocs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  favicon: img/logo.png
+  logo: img/logo.png
+  language: en
+  features:
+    - content.tabs.link
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.tracking
+    - navigation.prune
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - content.action.edit
+  palette: 
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+plugins:
+  - search:
+      lang: en
+extra:
+  status:
+    new: Recently updated!
+    inprogress: Article is in progress
+  social:
+    - icon: simple/discord
+      link: https://discord.gg/Vhhcu9x
+      name: Discord
+    - icon: simple/github
+      link: https://github.com/DerKrisp
+      name: Github
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - '': index.md
+  - KrispyRoleplay:
+    - About:
+      - krispyroleplay/about.md
+    - How to use:
+      - krispyroleplay/charcreation.md
+    - Administration:
+      - krispyroleplay/permissions.md
